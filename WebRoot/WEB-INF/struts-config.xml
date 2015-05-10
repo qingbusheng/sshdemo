@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="loginForm" type="com.test.struts.form.LoginForm" />
+    <form-bean name="endForm" type="com.test.struts.form.EndForm" />
+
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    <action
+      attribute="loginForm"
+      name="loginForm"
+      path="/start"
+      scope="request"
+      type="com.test.struts.action.StartAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+
+  </action-mappings>
+
+  <message-resources parameter="com.test.struts.ApplicationResources" />
+</struts-config>
+

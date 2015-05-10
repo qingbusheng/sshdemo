@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/start.do" location="120,60" dimension="150,100" />
+  <StrutsActivity path="/MyJsp.jsp" location="375,60" dimension="150,100" />
+  <StrutsActivity path="/MyHtml.html" location="375,210" dimension="150,100" />
+</FlowViewLayout>
+
